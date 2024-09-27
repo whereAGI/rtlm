@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.status-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#status-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+#status-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.content {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.transcript-container, .response-container {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #3498db;
+}
+
+#transcript, #response {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 50px;
+}
+
+.instructions {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #status-text {
+        font-size: 16px;
+    }
+}
+
+/* Container for API keys */
+.api-keys-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Labels for input fields */
+.api-keys-container label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input fields */
+.api-keys-container input[type="text"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.api-keys-container input[type="text"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Start button */
+#start-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#start-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#start-button:active {
+    background-color: #004494;
+    transform: scale(1);
+}
